@@ -158,7 +158,7 @@ function changepage(name , data ){
     localStorage.setItem("Sname",data)
     console.log(localStorage.getItem("Tname"))
     console.log(localStorage.getItem("Sname"))
-    window.location.href="attendance.html"
+    window.location.href="https://dheeraj0908.github.io/gtcerp.github.io/attendance.html"
     
 }
 function gotoview(name , data ){
