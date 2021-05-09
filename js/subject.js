@@ -158,7 +158,7 @@ function changepage(name , data ){
     localStorage.setItem("Sname",data)
     console.log(localStorage.getItem("Tname"))
     console.log(localStorage.getItem("Sname"))
-    window.location.pathname="attendance.html"
+    window.location.href="attendance.html"
     
 }
 function gotoview(name , data ){
