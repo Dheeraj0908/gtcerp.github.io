@@ -168,12 +168,12 @@ function gotoview(name , data ){
     localStorage.setItem("Sname",data)
     console.log(localStorage.getItem("Tname"))
     console.log(localStorage.getItem("Sname"))
-    window.location.pathname="selectdate.html"
+    window.location.href="https://dheeraj0908.github.io/gtcerp.github.io/selectdate.html"
     
 }
 function changepageto(dateto ){
     localStorage.setItem("dateto",dateto)
-    window.location.pathname="view.html"
+    window.location.href="https://dheeraj0908.github.io/gtcerp.github.io/view.html"
     
 }
 
@@ -309,7 +309,7 @@ function buildTable(data){
 
 
 function logout() {
-    window.location.pathname = "index.html"
+    window.location.href="https://dheeraj0908.github.io/gtcerp.github.io/index.html"
 
 }
 
