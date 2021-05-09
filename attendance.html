@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/Responsive-Login-Form-master/css/Subject.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/Subject.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+  <script type="text/javascript" src="js/subject.js"></script>
+</head>
+<body  onload="dataload()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">GTC </a>
+      
+       
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">YOU ARE LOGIN</a>
+            </li>
+         
+          </ul>
+         
+        </div>
+        <button class="btn btn-danger" onclick="logout()" type="submit">LOGOUT</button>
+      </div>
+   
+  </nav>
+  
+  <div class="container">
+    <div>
+      <h1 id="details">
+        
+      </h1>
+    </div>
+  
+<div class="col" >
+  <h3 class="marb" >Please Choose A Date : <input class="marl" type="date" id="date" name="birthday"></h3>
+ 
+
+
+</div>
+
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th>RollNo</th>
+            <th>Student Name </th>
+            <th>Course</th>
+            <th>Attendance</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="active-row">
+            <td id="Roll">19BTCSE001</td>
+            <td id="Sname" >Abhishek Baral</td>
+            <td>Btech(CSE)</td>
+            <td>
+              <div id="19BTCSE001" class="row">
+              <button type="button" class="btn btn-success buttonsize" onclick="spresent('19BTCSE001' , 'Abhishek Baral')">
+                Present</button>
+                <button type="button" class="btn btn-danger buttonsize" onclick="sabsent('19BTCSE001' , 'Abhishek Baral')">Absent</button>
+
+            </div>
+            </td>
+            
+          </tr>
+          <tr >
+            <td id="Roll">19BTCSE002</td>
+            <td id="Sname" >Abhishek Mishra</td>
+            <td>Btech(CSE)</td>
+            <td>
+              <div id="19BTCSE002" class="row">
+              <button type="button" class="btn btn-success buttonsize" onclick="spresent('19BTCSE002' , 'Abhishek Mishra')">
+                Present</button>
+                <button type="button" class="btn btn-danger buttonsize" onclick="sabsent('19BTCSE002' , 'Abhishek Mishra')">Absent</button>
+
+            </div>
+            </td>
+            
+          </tr>
+          
+       
+          
+        
+          
+         
+        </tbody>
+      </table>
+      </div>
+</body>
+</html>
+      

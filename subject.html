@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/Responsive-Login-Form-master/css/Subject.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/Subject.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script type="text/javascript" src="js/subject.js"></script>
+    
+
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">GTC </a>
+      
+       
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">YOU ARE LOGIN</a>
+            </li>
+         
+          </ul>
+         
+        </div>
+        
+          <button class="btn btn-danger" onclick="logout()" type="submit">LOGOUT</button>
+        
+      </div>
+   
+  </nav>
+  
+  <div class="container">
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th>S.No.</th>
+            <th>Teacher Name</th>
+            <th>Subject</th>
+            <th>Attendance</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="active-row">
+            <td>1</td>
+            <td>Lalit Malik</td>
+            <td>OOPS(C++)</td>
+            <td>
+              <div class="row">
+              <button type="button" class="btn btn-success buttonsize " onclick="changepage('Lalit' , 'OOPS')">ADD</button>
+              <button type="button" class="btn btn-info buttonsize" onclick="gotoview('Lalit' , 'OOPS')">View</button>
+
+            </div>
+            </td>
+            
+          </tr>
+          
+          <tr >
+            <td>2</td>
+            <td>Shilpa</td>
+            <td>WT(Web Technology)</td>
+            <td>
+              <div class="row">
+              <button type="button" class="btn btn-success buttonsize" onclick="changepage('Shilpa' , 'WT')">ADD</button>
+              <button type="button" class="btn btn-info buttonsize" onclick="gotoview('Shilpa' , 'WT')">View</button>
+
+            </div>
+            </td>
+            
+          </tr>
+          
+          <tr >
+            <td>3</td>
+            <td>Ritu Kadyan</td>
+            <td>OS(Operating System)</td>
+            <td>
+              <div class="row">
+              <button type="button" class="btn btn-success buttonsize" onclick="changepage('Ritu' , 'OS')">ADD</button>
+              <button type="button" class="btn btn-info buttonsize" onclick="gotoview('Ritu' , 'OS')">View</button>
+
+            </div>
+            </td>
+            
+          </tr>
+          
+          <tr>
+            <td>4</td>
+            <td id="Name">Ritika</td>
+            <td id="Ritika">OB(Organization Behaviour)</td>
+            <td>
+              <div class="row">
+              <button type="button" class="btn btn-success buttonsize" onclick="changepage('Ritika' , 'OB')" >ADD</button>
+              <button type="button" class="btn btn-info buttonsize" onclick="gotoview('Ritika' , 'OB')">View</button>
+
+            </div>
+            </td>
+            
+          </tr>
+          
+          <tr >
+            <td>5</td>
+            <td>Vijay Sheoran</td>
+            <td>Discrete Maths</td>
+            <td>
+              <div class="row">
+              <button type="button" class="btn btn-success buttonsize " onclick="changepage('Vijay' , 'DM') ">ADD</button>
+              <button type="button" class="btn btn-info buttonsize" onclick="gotoview('Vijay' , 'DM') " >View</button>
+
+            </div>
+            </td>
+            
+          </tr>
+          
+          <tr >
+            <td>6</td>
+            <td>Preeti </td>
+            <td>COA</td>
+            <td>
+              <div class="row">
+              <button type="button" class="btn btn-success buttonsize"  onclick="changepage('Preeti' , 'COA') ">ADD</button>
+              <button type="button" class="btn btn-info buttonsize"  onclick="gotoview('Preeti' , 'COA') " >View</button>
+
+            </div>
+            </td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+      </div>
+</body>
+</html>
