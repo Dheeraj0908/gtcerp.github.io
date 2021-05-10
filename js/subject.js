@@ -176,6 +176,11 @@ function changepageto(dateto ){
     window.location.href="https://dheeraj0908.github.io/gtcerp.github.io/view.html"
     
 }
+function submitto( ){
+    
+    window.location.href="https://dheeraj0908.github.io/gtcerp.github.io/subject.html"
+    
+}
 
 
 function get(){
